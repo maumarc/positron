@@ -1,0 +1,93 @@
+.header{
+    background-color: $primary-color;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    &__brand{
+        &__link{
+            &__img{
+                text-decoration: none;
+            }
+        }
+    }
+    &__nav{
+        width: 100%;
+        min-height: 50px;
+        &__menu{
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            position: relative;
+            top: 25px;
+            @media (max-width: 1024px){
+                display: none;
+            }
+            &__item{
+                margin-right: 30px;
+                font-size: 20px;
+                font-weight: $font-light;
+                min-height: 50px;
+                &:hover ul{
+                    display: block;
+                }
+                &__link{
+                    text-decoration: none;
+                    color: #FFF;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                    &__lang{
+                        color: $secondary-color;
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+                    &__img{
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+                }
+                &__submenu{
+                    margin: 15px -57px;
+                    padding: 0;
+                    position: absolute;
+                    text-align: center;
+                    list-style: none;
+                    background-color: $secondary-color;
+                    font-size: 17px;
+                    display: none;
+                    z-index: 10;
+                    &:first-child{
+                        margin: 15px -50px;
+                    }
+                    &:nth-child(3){
+                        margin: 15px -60px;
+                    }
+                    &:last-child{
+                        margin: 15px -53px;
+                    }
+                    &__item{
+                        margin: 15px 0px;
+                        min-width: 200px;
+                        &__link{
+                            text-decoration: none;
+                            color: #fff;
+                            &:hover{
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
