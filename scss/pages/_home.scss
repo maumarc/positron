@@ -52,6 +52,7 @@ body{
 
 .banner{
     background: url(images/banner1.png);
+    background-size: cover;
     height: 426px;
     padding: 100px 0px;
     &__h2{
@@ -80,6 +81,14 @@ body{
         width: 360px;
         height: 341px;
         border: 1px solid #d0d0d0;
+        &__row{
+            @media (min-width: 1024px) and (max-width: 1124px){
+                padding: 15px 15px !important;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                padding: 15px 15px !important;
+            }
+        }
         h1{
             color: #ffffff;
             font-family: Roboto;
@@ -98,6 +107,10 @@ body{
             margin: 0;
             padding: 10px 0px;
             text-align: center;
+            @media (min-width: 768px) and (max-width: 1023px){
+                padding: 0px !important;
+                font-size: 19px;
+            }
         }
         .quarters{
             padding: 20px 0px;
@@ -164,6 +177,9 @@ body{
                         text-decoration: underline;
                     }
                 }
+                @media (min-width: 768px) and (max-width: 1023px){
+                    font-size: 13px;
+                }
             }
         }
         .events{
@@ -184,7 +200,25 @@ body{
                 font-family: $fonte-base;
                 font-size: 17px;
                 font-weight: 700;
+                @media (min-width: 768px) and (max-width: 1023px){
+                    position: relative;
+                    right: 35px;
+                }
             }
+            @media (min-width: 1024px) and (max-width: 1124px){
+                padding-right: 25px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                padding-right: 0px;
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1124px){
+            width: 100%;
+            height: 415px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px){
+            width: 100%;
+            height: 445px;
         }
     }
 }
@@ -214,6 +248,7 @@ body{
 // }
 .quickAccess{
     background: url(images/banner2.png);
+    background-size: cover;
     height: 267px;
     h2{
         color: #ffffff;
@@ -298,6 +333,12 @@ body{
             &::placeholder{
                 color: #fff;
             } 
+        }
+        @media (min-width: 1024px) and (max-width: 1124px){
+            width: 100%;
+        }
+        @media (min-width: 768px) and (max-width: 1023px){
+            width: 100%;
         }
     }
 }
